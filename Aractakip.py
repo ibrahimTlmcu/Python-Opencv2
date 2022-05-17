@@ -1,6 +1,6 @@
 import cv2
 
-vid = cv2.VideoCapture("araba.mp4")
+vid = cv2.VideoCapture("araba.mp4") #Kendi araç videonuzu uygun formatlarda ekleyiniz.
 
 object_detector = cv2.createBackgroundSubtractorMOG2(history=100,varThreshold=40 )
 
