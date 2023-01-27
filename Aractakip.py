@@ -17,7 +17,7 @@ while True :
         
         alan = cv2.contourArea(ksk)
         if alan > 2000 : 
-            #cv2.drawContours(frame,[ksk],-1,(255,255,0),3) #seçtiğimz renk ve kalınlıkla çecresini çizfdik
+            #cv2.drawContours(frame,[ksk],-1,(255,255,0),3) #seçtiğimz renk ve kalinlikta cizgisini cektik
             x,y,w,h =cv2.boundingRect(ksk)
             cv2.rectangle(frame,(x,y),(x+w,y+h),(255,255,0),3) ## kare çizdik
         
